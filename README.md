@@ -495,14 +495,3 @@ You can customize styles by overriding default CSS variables in your own stylesh
     --button-shadow: #your-custom-shadow;
 }
 ```
-
-## License
-
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
-```
-
-### Instructions for Use
-- **Customization**: Replace `neumorize` with the actual name of your project.
-- **Expand as Needed**: Feel free to add any additional details, components, or examples relevant to your library.
-
-This single-page format keeps everything concise and easily navigable for users. Let me know if you need further adjustments!
