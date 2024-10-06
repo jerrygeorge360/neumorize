@@ -9,7 +9,7 @@ const { src, dest } = require("gulp");
 
 function styles() {
   console.log("scss processing")
-  return src("EbonyUI/**/*.scss") // Get all SCSS files
+  return src("neumorize/**/*.scss") // Get all SCSS files
     .pipe(sass().on("error", sass.logError))
     // .pipe(autoprefixer()) // Uncomment if you want to use autoprefixer
     .pipe(cleanCSS())
@@ -18,7 +18,7 @@ function styles() {
 
 function scripts() {
   console.log("script processing")
-  return src("EbonyUI/**/*.js") 
+  return src("neumorize/**/*.js") 
   .pipe(sourcemaps.init())
   .pipe(babel({ presets: ['@babel/preset-env'] }))
   .pipe(concat('all.min.js'))

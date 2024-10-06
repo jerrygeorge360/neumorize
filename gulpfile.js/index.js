@@ -3,8 +3,8 @@ const { series, parallel, src, symlink, dest, watch } = require("gulp");
 
 
 function defaultTask() {
-  watch("EbonyUI/**/*.scss", styles);
-  watch("EbonyUI/**/*.js",scripts);
+  watch("neumorize/**/*.scss", styles);
+  watch("neumorize/**/*.js",scripts);
 }
 
 exports.default = defaultTask;
