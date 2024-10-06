@@ -1,0 +1,42 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background_color; /* Dark gray from theme */
+    box-shadow: 5px 5px 10px $primary_shadow, -5px -5px 10px $secondary_shadow;
+    border-radius: 1em; /* Soft rounding for neumorphic effect */
+    padding: 1em 2em;
+    width: 90%; /* To allow space on the sides like in the image */
+    margin: 2em auto; /* Centering the navbar */
+    opacity: 0.8;
+    
+
+    .navbar-brand {
+        font-size: 1.5em;
+        color: $text_primary;
+        font-weight: bold;
+        padding-right: 2em; /* Space between brand and menu items */
+    }
+
+    .navbar-elements-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%; /* Adjusting width based on the design */
+        
+        .navbar-element {
+            font-size: 1em;
+            color: $text_secondary;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $text_primary;
+                background-color: $highlight_color;
+                box-shadow: inset 3px 3px 6px $primary_shadow, inset -3px -3px 6px $secondary_shadow;
+            }
+        }
+    }
+}

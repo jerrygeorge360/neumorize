@@ -1,0 +1,53 @@
+.carousel-container {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px $primary_shadow, -5px -5px 10px $secondary_shadow;
+    background-color: $background_color; /* Neumorphism background color */
+}
+
+.carousel {
+    display: flex; /* Use flexbox to align images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for image change */
+}
+
+.carousel-image {
+    min-width: 100%; /* Each image takes full width of the carousel */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 3px 3px 6px $primary_shadow, -3px -3px 6px $secondary_shadow;
+    display: none; /* Hide all images by default */
+}
+
+.carousel-image.active {
+    display: block; /* Show only the active image */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5em 1em;
+    background-color: $background_color;
+    border: none;
+    border-radius: 0.5em;
+    color: $text_primary;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 6px $primary_shadow, -3px -3px 10px $secondary_shadow;
+
+    &:hover {
+        background-color: $highlight_color;
+        color: $text_primary;
+        box-shadow: inset 3px 3px 6px $primary_shadow, inset -3px -3px 6px $secondary_shadow;
+    }
+}
+
+.prev {
+    left: 10px; /* Position for Previous button */
+}
+
+.next {
+    right: 10px; /* Position for Next button */
+}

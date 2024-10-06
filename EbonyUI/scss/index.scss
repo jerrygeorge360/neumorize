@@ -1,0 +1,34 @@
+@import "variable";
+@import "EbonyUI/scss/components/cards/productcard";
+@import "EbonyUI/scss/components/cards/blogcard";
+@import "EbonyUI/scss/components/button/ctabutton";
+@import "EbonyUI/scss/components/button/ghostbutton";
+@import "EbonyUI/scss/components/button/togglebutton";
+@import "EbonyUI/scss/components/button/filledbutton";
+@import "EbonyUI/scss/components/button/floatingactionbutton";
+@import "EbonyUI/scss/components/button/harmburgerbutton";
+@import "EbonyUI/scss/components/alerts/alerts";
+@import "EbonyUI/scss/components/badges/badges";
+@import "EbonyUI/scss/components/navbar/navbar";
+@import "EbonyUI/scss/components/modal/modal";
+@import "EbonyUI/scss/components/sidebar/sidebar";
+@import "EbonyUI/scss/components/pagination/pagination";
+@import "EbonyUI/scss/components/carousel/carousel";
+@import "EbonyUI/scss/components/dropdownmenu/dropdownmenu";
+@import "EbonyUI/scss/components/footer/footer";
+@import "EbonyUI/scss/components/formelements/formelements";
+@import "EbonyUI/scss/components/progressbar/progressbar";
+@import "EbonyUI/scss/components/indicator/indicator";
+@import "EbonyUI/scss/breakpoint";
+
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    width: 100%;
+}

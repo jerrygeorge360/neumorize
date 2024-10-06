@@ -1,0 +1,48 @@
+// Define breakpoints
+$breakpoint-sm: 576px;  // Small devices (phones)
+$breakpoint-md: 768px;  // Medium devices (tablets)
+$breakpoint-lg: 992px;  // Large devices (desktops)
+$breakpoint-xl: 1200px; // Extra large devices (large desktops)
+$breakpoint-xxl: 1400px; // Extra extra large devices (larger screens)
+
+// Container styles
+.container {
+    width: 100%; /* Full width by default */
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 1em; /* Padding on left and right for small screens */
+    background-color: $background_color; /* Dark background for the container */
+    box-shadow: 5px 5px 10px $primary_shadow, -5px -5px 10px $secondary_shadow; /* Neumorphism effect */
+    border-radius: 1em; /* Rounded corners for the container */
+
+    @media (min-width: $breakpoint-sm) {
+        padding: 0 2em; /* Increase padding on small devices */
+    }
+
+    @media (min-width: $breakpoint-md) {
+        padding: 0 3em; /* Increase padding on medium devices */
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        padding: 0 4em; /* Increase padding on large devices */
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        padding: 0 5em; /* Increase padding on extra large devices */
+    }
+}
+
+// Additional styles for text within the container
+.container h1,
+.container p {
+    color: $text_primary; // Text color for heading and paragraph
+    margin: 1em 0; // Margin for spacing
+}
+
+.container h1 {
+    font-size: 2em; // Larger font size for headings
+}
+
+.container p {
+    font-size: 1em; // Normal font size for paragraphs
+}
