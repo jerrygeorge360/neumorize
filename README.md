@@ -24,6 +24,52 @@ Or you can include it directly from a CDN in your HTML file:
 <script src="https://cdn.jsdelivr.net/npm/neumorize/dist/js/all.min.js"></script>
 ```
 
+### Cloning the Repository
+
+If you prefer to clone the repository, follow these steps:
+
+1. **Clone the Repository**
+
+   Open your terminal and run the following command:
+   ```git clone https://github.com/jerrygeorge360/neumorize.git```
+2. **Navigate to the Cloned Directory**
+
+    Change to the directory of the cloned repository:
+
+    ``` cd neumorize ```
+
+3. **Install Dependencies:**
+
+    Install the necessary packages specified in the package.json:
+
+    ``` npm install ```
+4. **Run Gulp Tasks**
+
+    You can run the default Gulp task to process your Sass files:
+
+    ``` gulp ```
+
+5. **Check Compiled Output**
+
+    After running the Gulp tasks, you can find the compiled CSS in the output directory specified in the Gulp configuration.
+
+
+6. **Link the Compiled CSS in Your Project**
+
+    Finally, include the compiled CSS and JS file in your HTML:
+
+    ```
+    <link rel="stylesheet" href="dist/css/scss/index.css" />
+    
+    <script src="dist/js/all.min.js">
+    ```
+   
+    
+    
+
+
+
+
 ## Quick Start
 
 1. Include **Neumorize** in your HTML file:
