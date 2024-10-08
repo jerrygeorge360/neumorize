@@ -7,4 +7,6 @@ function defaultTask() {
   watch("neumorize/**/*.js",scripts);
 }
 
-exports.default = defaultTask;
+const build = series(parallel(styles,scripts),defaultTask);
+
+exports.default = build;
